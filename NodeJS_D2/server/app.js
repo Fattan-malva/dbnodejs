@@ -65,5 +65,9 @@ app.get('/search/:name', (request, response) => {
         .catch(err => console.log(err));
 });
 
+app.use(express.static('client'))
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/client/index.html')
+})
 
 app.listen(5000, () => console.log('app is running'));
