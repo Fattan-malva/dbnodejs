@@ -67,7 +67,7 @@ function deleteRowById(id) {
 }
 
 function handleEditRow(id) {
-    const updateSection = document.querySelector('#update-row-text');
+    const updateSection = document.querySelector('#update-row');
     updateSection.hidden = false;
     document.querySelector('#update-row-btn').dataset.id = id;
 }
